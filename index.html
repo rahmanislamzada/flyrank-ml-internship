@@ -1,31 +1,106 @@
-<!-- Live Working Netlify Contact Form -->
-<section id="contact" style="max-width: 600px; margin: 2rem auto; padding: 1rem;">
-  <h2>Get in Touch</h2>
-  <form name="contact" method="POST" data-netlify="true">
-    <input type="hidden" name="form-name" value="contact" />
-    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Basic SEO & Social Share Preview Meta Tags -->
+  <title>Rahman Islamzada | Personal SEO & Content Optimization Agent Portfolio</title>
+  <meta name="description" content="Portfolio and documentation for an autonomous Search Console analytics agent and ML optimization pipeline built on 79M+ rows." />
+  <meta name="author" content="Rahman Islamzada" />
+
+  <!-- Open Graph / Social Media Preview -->
+  <meta property="og:title" content="Rahman Islamzada — Machine Learning & SEO Portfolio" />
+  <meta property="og:description" content="Autonomous Search Console decision-support agent built with DuckDB and Random Forest." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rahmanislamzada.github.io/flyrank-ml-internship/" />
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #1f2937;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+      background-color: #f9fafb;
+    }
+    header {
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    h1 { color: #111827; margin-bottom: 0.5rem; }
+    h2 { color: #1f2937; margin-top: 2rem; }
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Rahman Islamzada</h1>
+    <p>Machine Learning & Search Intelligence Portfolio</p>
     <p>
-      <label>Your Name: <br>
-        <input type="text" name="name" required style="width: 100%; padding: 0.5rem; margin-top: 0.25rem;" />
-      </label>
+      <a href="https://github.com/rahmanislamzada/flyrank-ml-internship" target="_blank">GitHub Repository</a> | 
+      <a href="#contact">Contact Me</a>
     </p>
-    
-    <p>
-      <label>Your Email: <br>
-        <input type="email" name="email" required style="width: 100%; padding: 0.5rem; margin-top: 0.25rem;" />
-      </label>
-    </p>
-    
-    <p>
-      <label>Message: <br>
-        <textarea name="message" rows="4" required style="width: 100%; padding: 0.5rem; margin-top: 0.25rem;"></textarea>
-      </label>
-    </p>
-    
-    <p>
-      <button type="submit" style="padding: 0.75rem 1.5rem; background-color: #2563EB; color: white; border: none; border-radius: 4px; cursor: pointer;">
-        Send Message
-      </button>
-    </p>
-  </form>
-</section>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Personal SEO & Content Optimization Agent (FL-09)</h2>
+      <p>An autonomous decision-support agent designed to evaluate Google Search Console performance metrics, isolate striking-distance opportunities (positions 5–12), and generate human-in-the-loop action playbooks with strict safety guardrails.</p>
+      <ul>
+        <li><strong>Data Volume:</strong> 79M+ anonymized Search Console snapshot rows</li>
+        <li><strong>Engine:</strong> DuckDB + Grouped Random Forest Classifier</li>
+        <li><strong>F1-Score Lift:</strong> Beat baseline heuristic from 0.6158 to 0.8623 (+24.65%)</li>
+      </ul>
+    </section>
+
+    <!-- Live Working Serverless Contact Form -->
+    <section id="contact" class="card">
+      <h2>Get in Touch</h2>
+      <form name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
+        
+        <p>
+          <label>Your Name: <br>
+            <input type="text" name="name" required style="width: 100%; padding: 0.5rem; margin-top: 0.25rem; border: 1px solid #d1d5db; border-radius: 4px;" />
+          </label>
+        </p>
+        
+        <p>
+          <label>Your Email: <br>
+            <input type="email" name="email" required style="width: 100%; padding: 0.5rem; margin-top: 0.25rem; border: 1px solid #d1d5db; border-radius: 4px;" />
+          </label>
+        </p>
+        
+        <p>
+          <label>Message: <br>
+            <textarea name="message" rows="4" required style="width: 100%; padding: 0.5rem; margin-top: 0.25rem; border: 1px solid #d1d5db; border-radius: 4px;"></textarea>
+          </label>
+        </p>
+        
+        <p>
+          <button type="submit" style="padding: 0.75rem 1.5rem; background-color: #2563EB; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">
+            Send Message
+          </button>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer style="text-align: center; margin-top: 3rem; color: #6b7280; font-size: 0.875rem;">
+    <p>© 2026 Rahman Islamzada. Built on FlyRank ML Internship framework.</p>
+  </footer>
+
+</body>
+</html>
