@@ -1,153 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rahman Islamzada — ML & Data Engineering Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg-color: #FAFAFA;
-            --text-color: #111827;
-            --accent-color: #2563EB;
-            --border-color: #E5E7EB;
-            --card-bg: #FFFFFF;
-        }
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        nav {
-            background-color: var(--card-bg);
-            border-bottom: 1px solid var(--border-color);
-            padding: 16px 24px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            font-weight: 700;
-            font-size: 1.1rem;
-            color: var(--text-color);
-            text-decoration: none;
-        }
-        .nav-links a {
-            margin-left: 20px;
-            color: var(--text-color);
-            text-decoration: none;
-            font-size: 0.95rem;
-            font-weight: 600;
-        }
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-        .hero {
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 30px;
-            margin-bottom: 40px;
-        }
-        .badge {
-            display: inline-block;
-            font-size: 0.8rem;
-            color: var(--accent-color);
-            background-color: #EFF6FF;
-            padding: 4px 12px;
-            border-radius: 9999px;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-        h1 {
-            font-size: 2.2rem;
-            margin-bottom: 16px;
-            line-height: 1.3;
-        }
-        .case-card {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 24px;
-            margin-bottom: 24px;
-        }
-        .case-card h3 {
-            margin-top: 0;
-            color: var(--accent-color);
-        }
-        code, pre {
-            font-family: 'JetBrains Mono', monospace;
-            background-color: #F3F4F6;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-size: 0.9rem;
-        }
-        pre {
-            padding: 16px;
-            overflow-x: auto;
-        }
-        .cta-btn {
-            display: inline-block;
-            background-color: var(--accent-color);
-            color: #FFFFFF;
-            padding: 12px 24px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 600;
-            margin-top: 10px;
-        }
-    </style>
-</head>
-<body>
-
-    <nav>
-        <a href="#" class="logo">[ R.I ] Rahman Islamzada.</a>
-        <div class="nav-links">
-            <a href="#case-study">Case Study</a>
-            <a href="#identity">Identity Kit</a>
-            <a href="#github">GitHub</a>
-        </div>
-    </nav>
-
-    <div class="container">
-        <section class="hero">
-            <span class="badge">Live Portfolio v1.0 — Ready for Review</span>
-            <h1>I build scalable DuckDB and machine learning pipelines that transform raw Google Search Console performance data into actionable search visibility insights.</h1>
-            <a href="https://github.com/rahmanislamzada/flyrank-ml-internship" class="cta-btn" id="github">Explore GitHub Repository</a>
-        </section>
-
-        <section id="case-study">
-            <h2>Featured Case Study: FlyRank ML Ranking Pipeline</h2>
-            <div class="case-card">
-                <h3>Beat 1: The Problem</h3>
-                <p>Manual GSC spreadsheet audits fail to capture non-linear position vs CTR decay, causing engineers to miss high-opportunity keywords.</p>
-                
-                <h3>Beat 2: What I Did & Decided</h3>
-                <p>Engineered an in-memory DuckDB query pipeline with strict zero-leakage data contracts and trained a Scikit-Learn Random Forest model on 1,200 search performance snapshots.</p>
-
-                <h3>Beat 3: What Came of It</h3>
-                <p>Achieved superior precision and F1-score gains over baseline heuristics, enabling automated prioritization via <code>baseline_action_score.csv</code>.</p>
-                <pre><code>SELECT content_hash_id, priority_score 
-FROM fact_daily 
-WHERE gsc_impressions > 500 
-ORDER BY priority_score DESC;</code></pre>
-            </div>
-        </section>
-
-        <section id="identity" class="case-card">
-            <h2>Identity & Architecture Notes</h2>
-            <ul>
-                <li><strong>Design Stack:</strong> Pure HTML5 / CSS3 hosted on GitHub Pages (Zero build bloat).</li>
-                <li><strong>Typography:</strong> Inter (Headings & Body), JetBrains Mono (Code).</li>
-                <li><strong>Palette:</strong> Canvas Off-White (<code>#FAFAFA</code>), Ink Charcoal (<code>#111827</code>), Signal Blue (<code>#2563EB</code>).</li>
-            </ul>
-        </section>
-    </div>
-
-</body>
-</html>
+<!-- Live Working Netlify Contact Form -->
+<section id="contact" style="max-width: 600px; margin: 2rem auto; padding: 1rem;">
+  <h2>Get in Touch</h2>
+  <form name="contact" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="contact" />
+    
+    <p>
+      <label>Your Name: <br>
+        <input type="text" name="name" required style="width: 100%; padding: 0.5rem; margin-top: 0.25rem;" />
+      </label>
+    </p>
+    
+    <p>
+      <label>Your Email: <br>
+        <input type="email" name="email" required style="width: 100%; padding: 0.5rem; margin-top: 0.25rem;" />
+      </label>
+    </p>
+    
+    <p>
+      <label>Message: <br>
+        <textarea name="message" rows="4" required style="width: 100%; padding: 0.5rem; margin-top: 0.25rem;"></textarea>
+      </label>
+    </p>
+    
+    <p>
+      <button type="submit" style="padding: 0.75rem 1.5rem; background-color: #2563EB; color: white; border: none; border-radius: 4px; cursor: pointer;">
+        Send Message
+      </button>
+    </p>
+  </form>
+</section>
