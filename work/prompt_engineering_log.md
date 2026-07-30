@@ -1,5 +1,3 @@
-Aha, baş üstə! Bütün mətni birbaşa tam olaraq kopyalayıb `work/prompt_engineering_log.md` faylına yapışdıra bilməyin üçün aşağıda tək bir blokda verirəm:
-
 ```markdown
 # Phase: Foundations — Prompt Engineering Iteration Log & Cross-Model Audit
 
