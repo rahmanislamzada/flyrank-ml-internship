@@ -53,3 +53,9 @@ Evaluated under a strict Client-Grouped K-Fold Cross-Validation (GroupKFold) spl
 1. **No Automated Publishing:** The agent strictly generates recommendations; it never directly modifies production CMS content or URL redirects.
 2. **Algorithm Volatility Limit:** Performance degrades during major Google core search algorithm updates due to unpredictable SERP position reshuffling.
 3. **Data Freshness Dependency:** Requires daily/weekly GSC data partition re-ingestion to prevent priority score decay.
+
+---
+
+## 6. AI Transparency & Human Verification
+* **AI Assistance:** Architectural boilerplate, LaTeX mathematical formulations, and draft scaffolding were generated with AI assistance.
+* **Human Engineering & Verification:** Feature boundaries, SQL aggregation pipelines in DuckDB, `GroupKFold` split validation logic, metric benchmarking, and domain guardrails were verified, written, and executed independently.
